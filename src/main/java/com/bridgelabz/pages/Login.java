@@ -20,6 +20,7 @@ public class Login extends Base {
     public static WebElement loginButton;
 
     public Login(WebDriver driver) {
+
         PageFactory.initElements(driver,this);
     }
 
