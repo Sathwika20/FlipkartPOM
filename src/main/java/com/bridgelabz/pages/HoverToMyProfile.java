@@ -6,11 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MyProfile extends Base {
+public class HoverToMyProfile extends Base {
     @FindBy(xpath = "//div[text() = 'My Profile']")
     public static WebElement myProfile;
 
-    public MyProfile(WebDriver driver){
+    public HoverToMyProfile(WebDriver driver){
 
         PageFactory.initElements(driver,this);
     }
