@@ -2,6 +2,7 @@ package com.bridgelabz.pages.test;
 
 import com.bridgelabz.base.Base;
 import com.bridgelabz.pages.Login;
+import com.bridgelabz.pages.MouseHovering;
 import org.testng.annotations.Test;
 
 public class MouseHoveringTest extends Base {
@@ -12,10 +13,10 @@ public class MouseHoveringTest extends Base {
     }
     @Test
     public void mouseHoverToSathwika() throws InterruptedException {
-        MouseHoveringTest mouseHoveringTest = new MouseHoveringTest();
-        mouseHoveringTest.mouseHoverToSathwika();
-        Thread.sleep(2000);
-
-
+        MouseHovering mouseHovering = new MouseHovering(driver);
+        mouseHovering.mouseHover();
     }
+
+
+
 }

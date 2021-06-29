@@ -7,32 +7,34 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.beans.PropertyChangeListener;
 
 public class MouseHovering extends Base {
+
+    //@FindBy is used to find the elements by using locators
+    //xpath of the element to be hovered
 
     @FindBy(xpath = "//div[text() = 'Sathwika']")
     public static WebElement sathwika;
 
+    //Generate a constructor
     public MouseHovering(WebDriver driver) {
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
-    public static void mouseHoverToSathwika() throws InterruptedException {
+    //Actions class is used to hover on to the element
+    public static void mouseHover() throws InterruptedException {
         Actions actions = new Actions(driver);
         actions.moveToElement(sathwika).build().perform();
         Thread.sleep(2000);
-
-
     }
 
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
