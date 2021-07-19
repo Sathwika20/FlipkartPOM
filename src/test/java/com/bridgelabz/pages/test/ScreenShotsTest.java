@@ -11,10 +11,12 @@ import org.testng.annotations.Test;
 public class ScreenShotsTest extends Base {
     @Test
     public void takeScreenShotFailedTest1() {
+
         Assert.assertEquals(false,true);
     }
     @Test
     public void takeScreenShotFailedTest2() {
+
         Assert.assertEquals(false,true);
     }
 

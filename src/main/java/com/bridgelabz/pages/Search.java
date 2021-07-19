@@ -29,9 +29,15 @@ public class Search extends Base {
         Thread.sleep(3000);
         mobiles.click();
         Thread.sleep(2000);
+
+        //JavascriptExecutor here is used to scroll the window
+        //window is scrolled downwards by 1000 pixel
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,1000)");
         Thread.sleep(5000);
+
+        //Action class is used here to navigate toward the element
+        //click() method is used to click on to the particular navigated element
         Actions action = new Actions(driver);
         action.moveToElement(realmeC21).click().perform();
         Thread.sleep(2000);
