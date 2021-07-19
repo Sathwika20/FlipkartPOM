@@ -6,12 +6,12 @@ import com.bridgelabz.pages.Search;
 import org.testng.annotations.Test;
 
 public class SearchTest extends Base {
-    @Test
+    @Test(priority = 1)
     public void loginToApplication() throws InterruptedException {
         Login login = new Login(driver);
         login.getUserName();
     }
-    @Test
+    @Test(priority = 2)
     public void searchInApplication() throws InterruptedException {
         Search search = new Search(driver);
         search.search();
