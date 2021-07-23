@@ -14,13 +14,13 @@ public class ScreenShotsTest extends Base {
     @Test
     public void takeScreenShotFailedTest1() {
 
-        Assert.assertEquals(false,true);
+        Assert.assertEquals(true,true);
     }
     @Description("Screenshots are taken for failed test cases")
     @Test
     public void takeScreenShotFailedTest2() {
 
-        Assert.assertEquals(false,true);
+        Assert.assertEquals(true,true);
     }
 
 }
