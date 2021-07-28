@@ -9,9 +9,10 @@ import org.testng.annotations.BeforeTest;
 public class Base {
     public static WebDriver driver;
 
+
     //Before execution
     @BeforeTest
-    public void setUp() {
+    public void setUp() throws InterruptedException {
         //launches the chromedriver using Webdriver interface
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -19,8 +20,7 @@ public class Base {
         driver.manage().window().maximize();
         //Enter the URL of Application
         driver.get("https://www.flipkart.com/");
-
-
+        Thread.sleep(5000);
     }
     //After execution
     @AfterTest
